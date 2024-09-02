@@ -1,16 +1,19 @@
-let nama = "Lele";
-let peran = "Penyihir";
+let pengambaraLapar = false;
+let uang = true;
 
-if (nama !== "") {
-    if (peran === "") {
-        console.log(`Halo ${nama}, Ayo pilih peranmu untuk memulai game!`);
-    } else if (peran === "Ksatria") {
-        console.log(`Selamat datang di Dunia Proxytia, ${nama}\nHalo ${peran} ${nama}, kamu dapat menyerang dengan senjatamu!`);
-    } else if (peran === "Tabib") {
-        console.log(`Selamat datang di Dunia Proxytia, ${nama}\nHalo ${peran} ${nama}, kamu akan membantu temanmu yang terluka.`);
-    } else if (peran === "Penyihir") {
-        console.log("Selamat datang di Dunia Proxytia, " + nama + "\nHalo " + peran + " " + nama + ", ciptakan keajaiban yang membantu kemenanganmu!")
+
+if (pengambaraLapar) {
+    console.log("lapar");
+    if (uang) {
+        console.log("Makan");
+    } else {
+        console.log("Tidur");
     }
 } else {
-    console.log(`Nama harus di isi untuk langkah berikutnya!`)
+    console.log("tidak lapar");
+    if (uang) {
+        console.log("Jus");
+    } else {
+        console.log("Air");
+    }
 }
